@@ -7,9 +7,10 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Category {
+public class Cart {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int id;
-        private String name;
+        private int cartId;
+        private int quantity;
 }
+

@@ -1,0 +1,565 @@
+2025-03-10T15:30:58.898Z  INFO 41957 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 41957 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:30:58.902Z  INFO 41957 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:30:59.008Z  INFO 41957 --- [toystore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-10T15:30:59.008Z  INFO 41957 --- [toystore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-10T15:30:59.695Z  INFO 41957 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:30:59.746Z  INFO 41957 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:31:00.223Z  INFO 41957 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:31:00.235Z  INFO 41957 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:31:00.236Z  INFO 41957 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:31:00.268Z  INFO 41957 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:31:00.268Z  INFO 41957 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1259 ms
+2025-03-10T15:31:00.420Z  INFO 41957 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:31:00.455Z  INFO 41957 --- [toystore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-10T15:31:00.479Z  INFO 41957 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:31:00.684Z  INFO 41957 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:31:00.706Z  INFO 41957 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-10T15:31:00.856Z  INFO 41957 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2abc5fb5
+2025-03-10T15:31:00.858Z  INFO 41957 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-10T15:31:00.875Z  WARN 41957 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:31:00.876Z  WARN 41957 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:31:00.892Z  INFO 41957 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:31:01.539Z  INFO 41957 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:31:01.727Z  INFO 41957 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:31:01.910Z  INFO 41957 --- [toystore] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-10T15:31:02.873Z  WARN 41957 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:31:02.906Z  INFO 41957 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:31:03.215Z  INFO 41957 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:31:03.237Z  INFO 41957 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:31:03.247Z  INFO 41957 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 4.812 seconds (process running for 5.151)
+2025-03-10T15:33:06.386Z  INFO 41957 --- [toystore] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:33:06.390Z  INFO 41957 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:33:06.396Z  INFO 41957 --- [toystore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:33:06.400Z  INFO 41957 --- [toystore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-10T15:33:06.406Z  INFO 41957 --- [toystore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-10T15:37:02.415Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 44727 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:37:02.418Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:37:02.469Z  INFO 44727 --- [toystore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-10T15:37:02.469Z  INFO 44727 --- [toystore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-10T15:37:03.205Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:37:03.266Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:37:03.728Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:37:03.739Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:37:03.739Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:37:03.770Z  INFO 44727 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:37:03.770Z  INFO 44727 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1300 ms
+2025-03-10T15:37:03.936Z  INFO 44727 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:37:03.972Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-10T15:37:03.996Z  INFO 44727 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:37:04.217Z  INFO 44727 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:37:04.246Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-10T15:37:04.380Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@382348db
+2025-03-10T15:37:04.382Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-10T15:37:04.399Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:37:04.400Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:37:04.416Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:37:05.039Z  INFO 44727 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:37:05.189Z  INFO 44727 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:37:05.381Z  INFO 44727 --- [toystore] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-10T15:37:06.734Z  WARN 44727 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:37:06.768Z  INFO 44727 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:37:07.092Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:37:07.117Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:37:07.128Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 5.113 seconds (process running for 5.441)
+2025-03-10T15:37:10.161Z  INFO 44727 --- [toystore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-10T15:37:10.161Z  INFO 44727 --- [toystore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-10T15:37:10.163Z  INFO 44727 --- [toystore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-10T15:38:38.565Z  INFO 44727 --- [toystore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-10T15:38:38.569Z  INFO 44727 --- [toystore] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:38:38.572Z  INFO 44727 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:38:38.579Z  INFO 44727 --- [toystore] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:38.583Z  INFO 44727 --- [toystore] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-10T15:38:38.603Z  INFO 44727 --- [toystore] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-10T15:38:38.796Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 44727 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:38:38.797Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:38:39.298Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:38:39.354Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:38:39.485Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:38:39.486Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:38:39.487Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:38:39.503Z  INFO 44727 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:38:39.503Z  INFO 44727 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 702 ms
+2025-03-10T15:38:39.560Z  INFO 44727 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:38:39.563Z  INFO 44727 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:38:39.573Z  INFO 44727 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:38:39.575Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-03-10T15:38:39.583Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70a49015
+2025-03-10T15:38:39.583Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-03-10T15:38:39.585Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:38:39.586Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:38:39.586Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:38:39.702Z ERROR 44727 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity 'com.examly.toystore.model.Category' due to: null
+2025-03-10T15:38:39.702Z  WARN 44727 --- [toystore] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity 'com.examly.toystore.model.Category' due to: null
+2025-03-10T15:38:39.703Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-03-10T15:38:39.718Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-03-10T15:38:39.719Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-10T15:38:39.724Z  INFO 44727 --- [toystore] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-10T15:38:39.737Z ERROR 44727 --- [toystore] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity 'com.examly.toystore.model.Category' due to: null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.examly.toystore.ToystoreApplication.main(ToystoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity 'com.examly.toystore.model.Category' due to: null
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 20 common frames omitted
+Caused by: org.hibernate.InstantiationException: Could not instantiate entity 'com.examly.toystore.model.Category' due to: null
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:100) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.lambda$prepareMappingModel$14(AbstractEntityPersister.java:5343) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.util.LazyValue.getValue(LazyValue.java:30) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.engine.internal.UnsavedValueFactory.getUnsavedIdentifierValue(UnsavedValueFactory.java:49) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.metamodel.mapping.internal.BasicEntityIdentifierMappingImpl.<init>(BasicEntityIdentifierMappingImpl.java:119) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.generateIdentifierMapping(AbstractEntityPersister.java:5712) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.lambda$prepareMappingModel$15(AbstractEntityPersister.java:5348) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.processSubPart(MappingModelCreationProcess.java:163) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareMappingModel(AbstractEntityPersister.java:5346) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareMappingModel(AbstractEntityPersister.java:5192) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.execute(MappingModelCreationProcess.java:84) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.process(MappingModelCreationProcess.java:42) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:200) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:373) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:302) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.3.jar:6.2.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.3.jar:6.2.3]
+	... 24 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:97) ~[hibernate-core-6.6.8.Final.jar:6.6.8.Final]
+	... 43 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete ConstructorHeaderName
+	Syntax error, insert ")" to complete ConstructorDeclaration
+	Syntax error, insert ";" to complete ConstructorDeclaration
+	Syntax error, insert "Identifier (" to complete ConstructorHeaderName
+	Syntax error, insert ")" to complete ConstructorDeclaration
+	Syntax error, insert ";" to complete ConstructorDeclaration
+	Syntax error on token "}", delete this token
+
+	at com.examly.toystore.model.Category.<init>(Category.java:7) ~[classes/:na]
+	... 49 common frames omitted
+
+2025-03-10T15:38:43.175Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 44727 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:38:43.176Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:38:43.330Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:38:43.343Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:38:43.460Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:38:43.461Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:38:43.461Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:38:43.478Z  INFO 44727 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:38:43.478Z  INFO 44727 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 300 ms
+2025-03-10T15:38:43.555Z  INFO 44727 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:38:43.558Z  INFO 44727 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:38:43.569Z  INFO 44727 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:38:43.573Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-03-10T15:38:43.581Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d8cf5db
+2025-03-10T15:38:43.582Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-03-10T15:38:43.582Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:38:43.583Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:38:43.584Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:38:43.871Z  INFO 44727 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:38:44.298Z  INFO 44727 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:44.501Z  WARN 44727 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:38:44.549Z  INFO 44727 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:38:44.798Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:38:44.838Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:38:44.843Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 1.694 seconds (process running for 103.157)
+2025-03-10T15:38:44.847Z  INFO 44727 --- [toystore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-10T15:38:48.203Z  INFO 44727 --- [toystore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-10T15:38:48.205Z  INFO 44727 --- [toystore] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:38:48.207Z  INFO 44727 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:38:48.210Z  INFO 44727 --- [toystore] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:48.212Z  INFO 44727 --- [toystore] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-03-10T15:38:48.213Z  INFO 44727 --- [toystore] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-03-10T15:38:48.296Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 44727 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:38:48.296Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:38:48.440Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:38:48.451Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:38:48.522Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:38:48.523Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:38:48.523Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:38:48.532Z  INFO 44727 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:38:48.533Z  INFO 44727 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 236 ms
+2025-03-10T15:38:48.560Z  INFO 44727 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:38:48.562Z  INFO 44727 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:38:48.569Z  INFO 44727 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:38:48.570Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-03-10T15:38:48.574Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b640832
+2025-03-10T15:38:48.574Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-03-10T15:38:48.576Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:38:48.576Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:38:48.576Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:38:48.794Z  INFO 44727 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:38:49.039Z  INFO 44727 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:49.163Z  WARN 44727 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:38:49.176Z  INFO 44727 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:38:49.245Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:38:49.251Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:38:49.254Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 0.976 seconds (process running for 107.567)
+2025-03-10T15:38:49.255Z  INFO 44727 --- [toystore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-10T15:38:51.648Z  INFO 44727 --- [toystore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-10T15:38:51.649Z  INFO 44727 --- [toystore] [Thread-14] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:38:51.650Z  INFO 44727 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:38:51.652Z  INFO 44727 --- [toystore] [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:51.652Z  INFO 44727 --- [toystore] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-03-10T15:38:51.653Z  INFO 44727 --- [toystore] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-03-10T15:38:51.726Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 44727 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:38:51.727Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:38:51.840Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:38:51.850Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:38:51.905Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:38:51.906Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:38:51.906Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:38:51.912Z  INFO 44727 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:38:51.913Z  INFO 44727 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2025-03-10T15:38:51.941Z  INFO 44727 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:38:51.942Z  INFO 44727 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:38:51.949Z  INFO 44727 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:38:51.950Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-03-10T15:38:51.953Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15507dda
+2025-03-10T15:38:51.953Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-03-10T15:38:51.954Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:38:51.954Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:38:51.954Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:38:52.036Z  INFO 44727 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:38:52.635Z  INFO 44727 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:52.728Z  WARN 44727 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:38:52.736Z  INFO 44727 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:38:52.796Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:38:52.802Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:38:52.805Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 1.097 seconds (process running for 111.118)
+2025-03-10T15:38:52.806Z  INFO 44727 --- [toystore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-10T15:38:54.198Z  INFO 44727 --- [toystore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-10T15:38:54.199Z  INFO 44727 --- [toystore] [Thread-18] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:38:54.201Z  INFO 44727 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:38:54.203Z  INFO 44727 --- [toystore] [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:54.204Z  INFO 44727 --- [toystore] [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-03-10T15:38:54.206Z  INFO 44727 --- [toystore] [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-03-10T15:38:54.295Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 44727 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:38:54.295Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:38:54.507Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:38:54.548Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:38:54.707Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:38:54.708Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:38:54.708Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:38:54.747Z  INFO 44727 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:38:54.747Z  INFO 44727 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 450 ms
+2025-03-10T15:38:54.785Z  INFO 44727 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:38:54.787Z  INFO 44727 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:38:54.794Z  INFO 44727 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:38:54.795Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-03-10T15:38:54.846Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e7ece52
+2025-03-10T15:38:54.846Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-03-10T15:38:54.847Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:38:54.847Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:38:54.848Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:38:55.004Z  INFO 44727 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:38:55.190Z  INFO 44727 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:55.305Z  WARN 44727 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:38:55.313Z  INFO 44727 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:38:55.376Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:38:55.383Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:38:55.388Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 1.117 seconds (process running for 113.701)
+2025-03-10T15:38:55.390Z  INFO 44727 --- [toystore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-10T15:38:58.779Z  INFO 44727 --- [toystore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-10T15:38:58.780Z  INFO 44727 --- [toystore] [Thread-22] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:38:58.781Z  INFO 44727 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:38:58.783Z  INFO 44727 --- [toystore] [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:58.783Z  INFO 44727 --- [toystore] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-03-10T15:38:58.785Z  INFO 44727 --- [toystore] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-03-10T15:38:58.856Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 44727 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:38:58.856Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:38:58.953Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:38:58.962Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:38:59.015Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:38:59.015Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:38:59.016Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:38:59.022Z  INFO 44727 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:38:59.023Z  INFO 44727 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 166 ms
+2025-03-10T15:38:59.041Z  INFO 44727 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:38:59.042Z  INFO 44727 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:38:59.048Z  INFO 44727 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:38:59.049Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-03-10T15:38:59.051Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4af8befc
+2025-03-10T15:38:59.051Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-03-10T15:38:59.052Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:38:59.052Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:38:59.052Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:38:59.119Z  INFO 44727 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:38:59.256Z  INFO 44727 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:38:59.344Z  WARN 44727 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:38:59.352Z  INFO 44727 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:38:59.410Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:38:59.415Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:38:59.418Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 0.583 seconds (process running for 117.731)
+2025-03-10T15:38:59.419Z  INFO 44727 --- [toystore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-10T15:40:28.878Z  INFO 44727 --- [toystore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-10T15:40:28.879Z  INFO 44727 --- [toystore] [Thread-26] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:40:28.880Z  INFO 44727 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:40:28.882Z  INFO 44727 --- [toystore] [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:40:28.882Z  INFO 44727 --- [toystore] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-03-10T15:40:28.883Z  INFO 44727 --- [toystore] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-03-10T15:40:28.958Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 44727 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:40:28.958Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:40:29.056Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:40:29.064Z  INFO 44727 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 5 JPA repository interfaces.
+2025-03-10T15:40:29.113Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:40:29.114Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:40:29.114Z  INFO 44727 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:40:29.120Z  INFO 44727 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:40:29.120Z  INFO 44727 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 161 ms
+2025-03-10T15:40:29.141Z  INFO 44727 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:40:29.142Z  INFO 44727 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:40:29.148Z  INFO 44727 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:40:29.149Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2025-03-10T15:40:29.151Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f131fc4
+2025-03-10T15:40:29.152Z  INFO 44727 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2025-03-10T15:40:29.152Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:40:29.152Z  WARN 44727 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:40:29.152Z  INFO 44727 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:40:29.216Z  INFO 44727 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:40:29.376Z  INFO 44727 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:40:29.471Z  WARN 44727 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:40:29.479Z  INFO 44727 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:40:29.549Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:40:29.555Z  INFO 44727 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:40:29.558Z  INFO 44727 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 0.618 seconds (process running for 207.872)
+2025-03-10T15:40:29.559Z  INFO 44727 --- [toystore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-10T15:41:04.503Z  INFO 44727 --- [toystore] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:41:04.504Z  INFO 44727 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:41:04.505Z  INFO 44727 --- [toystore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:41:04.506Z  INFO 44727 --- [toystore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2025-03-10T15:41:04.507Z  INFO 44727 --- [toystore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2025-03-10T15:51:17.669Z  INFO 51675 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Starting ToystoreApplication using Java 17.0.13 with PID 51675 (/home/coder/project/workspace/toystore/target/classes started by coder in /home/coder/project/workspace)
+2025-03-10T15:51:17.671Z  INFO 51675 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T15:51:17.715Z  INFO 51675 --- [toystore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-10T15:51:17.716Z  INFO 51675 --- [toystore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-10T15:51:18.431Z  INFO 51675 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T15:51:18.485Z  INFO 51675 --- [toystore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2025-03-10T15:51:18.934Z  INFO 51675 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-10T15:51:18.945Z  INFO 51675 --- [toystore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T15:51:18.945Z  INFO 51675 --- [toystore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T15:51:18.975Z  INFO 51675 --- [toystore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-10T15:51:18.975Z  INFO 51675 --- [toystore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1259 ms
+2025-03-10T15:51:19.093Z  INFO 51675 --- [toystore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T15:51:19.123Z  INFO 51675 --- [toystore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-10T15:51:19.145Z  INFO 51675 --- [toystore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T15:51:19.339Z  INFO 51675 --- [toystore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T15:51:19.359Z  INFO 51675 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-10T15:51:19.472Z  INFO 51675 --- [toystore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a260d95
+2025-03-10T15:51:19.474Z  INFO 51675 --- [toystore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-10T15:51:19.491Z  WARN 51675 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T15:51:19.491Z  WARN 51675 --- [toystore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-10T15:51:19.506Z  INFO 51675 --- [toystore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T15:51:20.145Z  INFO 51675 --- [toystore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T15:51:20.342Z  INFO 51675 --- [toystore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:51:20.592Z  INFO 51675 --- [toystore] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-10T15:51:21.584Z  WARN 51675 --- [toystore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T15:51:21.617Z  INFO 51675 --- [toystore] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-10T15:51:21.921Z  INFO 51675 --- [toystore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T15:51:21.942Z  INFO 51675 --- [toystore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-10T15:51:21.951Z  INFO 51675 --- [toystore] [restartedMain] c.examly.toystore.ToystoreApplication    : Started ToystoreApplication in 4.697 seconds (process running for 5.049)
+2025-03-10T15:51:26.335Z  INFO 51675 --- [toystore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-10T15:51:26.335Z  INFO 51675 --- [toystore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-10T15:51:26.336Z  INFO 51675 --- [toystore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-10T15:54:59.344Z ERROR 51675 --- [toystore] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.mapping.PropertyReferenceException: No property 'id' found for type 'User'] with root cause
+
+org.springframework.data.mapping.PropertyReferenceException: No property 'id' found for type 'User'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:384) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.query.QueryUtils.toJpaOrder(QueryUtils.java:753) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.query.QueryUtils.toOrders(QueryUtils.java:706) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getQuery(SimpleJpaRepository.java:767) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getQuery(SimpleJpaRepository.java:726) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:454) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:433) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.3.jar:6.2.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy131.findAll(Unknown Source) ~[na:na]
+	at com.examly.toystore.service.UserService.getAllUsers(UserService.java:18) ~[classes/:na]
+	at com.examly.toystore.controller.UserController.getAllUsers(UserController.java:21) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:731) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-03-10T15:57:30.763Z  INFO 51675 --- [toystore] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T15:57:30.765Z  INFO 51675 --- [toystore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T15:57:30.769Z  INFO 51675 --- [toystore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T15:57:30.772Z  INFO 51675 --- [toystore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-10T15:57:30.778Z  INFO 51675 --- [toystore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
